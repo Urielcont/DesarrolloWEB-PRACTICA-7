@@ -1,12 +1,14 @@
+// Obtener los datos de la api al hacer click en el boton
 document.getElementById('loadData').addEventListener('click', () => {
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(response => response.json())
         .then(data => {
-            mostrarDatos(data);
+            mostrarDatos(data); //enviar los datos a la funcion mostrarDatos
             document.getElementById('loadData').style.display = 'none';
         });
 });
 
+// funcion para crear una card por cada dato obtenido de la api
 function mostrarDatos(posts) {
     const container = document.getElementById('cardContainer');
     container.innerHTML = '';
@@ -19,6 +21,7 @@ function mostrarDatos(posts) {
     });
 }
 
+// Buscar en tiempo real los datos de la api
 document.getElementById('search').addEventListener('input', (e) => {
     const searchText = e.target.value.toLowerCase();
     document.querySelectorAll('.cont').forEach(post => {

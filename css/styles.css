@@ -1,12 +1,15 @@
-    body {
+  /* Diseño para body */
+  body {
         font-family: Arial, sans-serif;
         text-align: center;
         margin: 50px;
     }
+    /* Diseño para el contenido */
     .container {
         max-width: 600px;
         margin: auto;
     }
+    /* Diseño para el boton de cargar deatos */
     button {
         padding: 10px 20px;
         font-size: 16px;
@@ -14,6 +17,7 @@
         margin-bottom: 10px;
         background-color: aquamarine;
     }
+    /* Barra de busqueda */
     input {
         width: 100%;
         padding: 10px;
@@ -26,6 +30,7 @@
         border-color: aquamarine;
         outline: none;
     }
+    /* cards donde mostrar los dato */
     .cont {
         background-color: #02537d;
         color: white;
